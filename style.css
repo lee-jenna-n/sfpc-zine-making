@@ -53,6 +53,26 @@ body {
   position: absolute;
 }
 
+.popover-button {
+  text-decoration: underline;
+}
+
+.popover-button:hover {
+  color: blueviolet;
+}
+
+.popover-target {
+  font-size: 12px;
+  max-width: 300px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 0;
+  inset: auto;
+  position-area: bottom span-left;
+  padding: 15px;
+}
+
 .cursive {
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
