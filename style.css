@@ -23,7 +23,8 @@ body {
 .glow {
   transition:
     filter 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .glow:hover {

@@ -39,6 +39,7 @@
         </div>
         <div id="content" class="p-10 py-24 overflow-auto w-[48%] typewriter">
           <div class="section">
+            <div id="round-start">ROUND START</div>
             as i drink my morning coffee and look out at the Bay i grieve how
             different San Francisco is now. everything is impermanent, God is
             Change (in Octavia Butler's novel, Parable of the Sower, "God is
@@ -76,9 +77,10 @@
             https://www.kqed.org/news/12108353/sf-has-more-billionaires-than-any-city-in-california-heres-how-residents-voted-on-prop-40).
             the tech CEOs have used their political influence to flood the city
             with robotaxis, something we were never given the opportunity to
-            vote on (because of course we weren’t).
-            <div id="round-trigger">and they continue to</div>
-            cozy up to our billionaire mayor, working with him to blanket our
+            vote on (because of course we weren’t). and they continue to
+            <div id="round-end">ROUND STOP</div>
+            <div id="flower-start">FLOWER START</div>
+            cozy up to our billionaire mayor , working with him to blanket our
             streets with surveillance cameras (DCCC PAID BY FLOCK), leaving
             little resources to actually help the people (child homelessness has
             risen sharply in the last few years
@@ -116,10 +118,8 @@
             ACCOUNTS FROM PEOPLE something about recording my thoughts and
             observations for now, in case anyone is interested to read i know
             that loss and impermanence creates space for new beautiful things to
-            bloom.
-            <div id="flower-trigger">
-              and i do have an abundance of revolutionary optimism.
-            </div>
+            bloom. and i do have an abundance of revolutionary optimism.
+            <div id="flower-end">FLOWER STOP</div>
             AND ALL OF THESE DESTRUCTIVE FORCES ARE IMPERMANENT TOO. but today,
             as i drink my morning coffee and look out at the Bay, i let myself
             be sad.
@@ -129,31 +129,33 @@
     </div>
   </body>
   <script>
-    const round = document.querySelector("#round");
-    const roundTrigger = document.querySelector("#round-trigger");
-    const flower = document.querySelector("#flower");
-    const flowerTrigger = document.querySelector("#flower-trigger");
+    const contentContainer = document.querySelector("#content");
+    const imageComponents = [
+      {
+        name: "round",
+        element: document.querySelector("#round"),
+        sectionStart: document.querySelector("#round-start"),
+        sectionEnd: document.querySelector("#round-end"),
+      },
+      {
+        name: "flower",
+        element: document.querySelector("#flower"),
+        sectionStart: document.querySelector("#flower-start"),
+        sectionEnd: document.querySelector("#flower-end"),
+      },
+    ];
 
-    const makeObserver = (targetElement) => {
-      return new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            // Check if the trigger div is currently in the viewport
-            if (entry.isIntersecting) {
-              targetElement.classList.add("glowing");
-            } else {
-              targetElement.classList.remove("glowing");
-            }
-          });
-        },
-        {
-          threshold: 0.5, // Triggers when 50% of the triggerDiv is visible
-        },
-      );
-    };
+    contentContainer.addEventListener("scroll", (e) => {
+      imageComponents.forEach(({ sectionStart, sectionEnd, element }) => {
+        const sectionTop = sectionStart.getBoundingClientRect().top;
+        const sectionBottom = sectionEnd.getBoundingClientRect().bottom;
+        const sectionSize = sectionBottom - sectionTop;
 
-    // Add the observers
-    makeObserver(round).observe(roundTrigger);
-    makeObserver(flower).observe(flowerTrigger);
+        if (sectionTop < 0) {
+          const percentScrolled = sectionBottom / (sectionSize * 1.0);
+          element.style.opacity = percentScrolled;
+        }
+      });
+    });
   </script>
 </html>
