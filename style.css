@@ -1,0 +1,76 @@
+@keyframes glowing {
+  from {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+  }
+  to {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.3));
+  }
+}
+
+html {
+  min-height: 100dvh;
+}
+
+body {
+  min-height: 100dvh;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-clip: border-box;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.glow {
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
+}
+
+.glow:hover {
+  position: absolute;
+  animation-name: glowing;
+  animation-iteration-count: infinite;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+}
+
+.glowing {
+  position: absolute;
+  animation-name: glowing;
+  animation-iteration-count: infinite;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+}
+
+#image-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+#image-container img {
+  position: absolute;
+}
+
+.cursive {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.typewriter {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#content {
+  font-size: 18px;
+  line-height: 36px;
+  height: 100vh;
+  z-index: 40;
+}
+
+.section {
+  padding-bottom: 60px;
+}
