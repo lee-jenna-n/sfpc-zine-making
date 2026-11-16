@@ -10,40 +10,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Special+Elite&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Manjari:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="overflow-auto h-full w-full">
+    <div class="relative h-screen overflow-auto p-24 pt-12 content">
+      <a href="./index.html">&#8619; read the zine.</a>
+      <div id="main-title" class="title mt-12">the process</div>
       <div class="section">
-        <div>Initial sketch</div>
+        <div class="title">Initial proposal</div>
       </div>
       <div class="section">
-        <div>Writing draft</div>
+        <div class="title">Draft</div>
       </div>
       <div class="section">
-        <div>Technical prototype</div>
-        <img
-          class="w-[200px]"
-          src="./assets/process/prototype-1.png"
-          alt="initial technical prototype"
-        />
+        <div class="title">Technical prototype</div>
+        <div class="process-image">
+          <img
+            class="process-image"
+            src="./assets/process/prototype-1.png"
+            alt="initial technical prototype"
+          />
+          <div class="caption">
+            The first technical prototype added an animated glow to elements
+            based on scroll position.
+          </div>
+        </div>
         <div>
-          Built off of a
-          <a href="https://janna-ink.neocities.org/"
+          I started working off of a
+          <a href="https://janna-ink.neocities.org/" target="_blank"
             >previous assignment from class</a
-          >, I started testing:
+          >
+          because it had a similar layout. I updated it to start testing:
         </div>
         <ul>
           <li>General positioning and format</li>
-          <li>Applying styling dynamically while scrolling</li>
-          <li>Layering images</li>
+          <li>Dynamic styles that changed during scrolling</li>
+          <li>Layered images</li>
+          <li>Annotations with text and link content</li>
         </ul>
       </div>
       <div class="section">
-        <div>Print exploration</div>
+        <div class="title">Print exploration</div>
         <div>
           Started by carving lino blocks, printing them in black (the only ink i
           had), then scanning them into the computer

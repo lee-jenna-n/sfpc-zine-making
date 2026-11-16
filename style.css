@@ -1,14 +1,19 @@
-html {
-  min-height: 100dvh;
+body {
+  overflow: hidden;
 }
 
-body {
-  min-height: 100dvh;
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-clip: border-box;
-  background-attachment: fixed;
-  overflow: hidden;
+a {
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: blueviolet !important;
+}
+
+ul li {
+  list-style-type: "\2639";
+  margin-left: 20px;
+  padding-left: 8px;
 }
 
 #image-container {
@@ -45,25 +50,51 @@ body {
   padding: 15px;
 }
 
-.cursive {
-  font-family: "Homemade Apple", cursive;
+.title {
+  font-family: "Beth Ellen", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 32px;
+  line-height: 50px;
+  padding-bottom: 8px;
 }
 
-.typewriter {
-  font-family: "Special Elite", system-ui;
-  font-weight: 400;
-  font-style: normal;
+#main-title {
+  font-size: 48px;
+  line-height: 54px;
 }
 
 #content {
-  font-size: 18px;
-  line-height: 36px;
   height: 100vh;
-  z-index: 40;
+}
+
+#end {
+  padding-top: 200px;
+  text-align: end;
+}
+
+#end .title {
+  font-size: 18px;
 }
 
 .section {
+  padding-top: 20px;
   padding-bottom: 60px;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.process-image img {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 12px;
+  height: 300px;
+}
+
+.process-image .caption {
+  margin-bottom: 12px;
+  font-size: 12px;
 }
