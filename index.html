@@ -58,109 +58,410 @@
             </svg>
           </span>
         </div>
-        <div id="content" class="p-10 pt-14 pb-24 overflow-auto w-1/2">
+        <div
+          class="w-1/2 max-w-[1000px] h-screen p-10 flex flex-col justify-between items-end lg:justify-end lg:gap-12"
+        >
           <div id="main-title" class="title">
             as i drink my morning coffee and look out at the Bay
           </div>
-          <div class="section">
-            <div class="title" id="round-start">
-              i grieve how different San Francisco is now.
+          <div class="shrink flex flex-col items-center">
+            <div id="content" class="max-h-[500px] w-full overflow-y-auto pr-4">
+              <div class="section">
+                <div class="title" id="round-start">
+                  i grieve how different San Francisco is now.
+                </div>
+                <p>everything is impermanent.</p>
+                <p>
+                  <button class="popover-button" popovertarget="octavia-butler">
+                    God is Change</button
+                  >.
+                </p>
+                <span id="octavia-butler" class="popover-target" popover="auto">
+                  Octavia Butler's novel,
+                  <a
+                    href="https://www.octaviabutler.com/parableseries"
+                    target="_blank"
+                    >Parable of the Sower</a
+                  >, depicts a fictitious religion called Earthseed. "God is
+                  Change" is the core tenet, part of the verse:
+                  <div class="quote">
+                    All that you touch <br />You Change.<br /><br />All that you
+                    Change<br />
+                    Changes you.<br /><br />The only lasting truth<br />Is
+                    Change.<br /><br />God<br />Is Change.
+                  </div></span
+                >
+                <p>AND sometimes i find the loss overwhelming.</p>
+              </div>
+              <div class="section">
+                <div class="title">
+                  i grieve that my friends are moving away.
+                </div>
+                <p>
+                  they're embarking on new adventures, excited to build their
+                  next chapters in cities far from here. i love and support
+                  them, and i'm excited for them too. but i will miss our walks
+                  through the park, our Sunday morning farmers market chats, our
+                  serendipitous run-ins on random evenings.
+                </p>
+                <p>
+                  we will keep in touch for sure, but our relationships will
+                  change when we don't live in the same place anymore, when we
+                  don't have that shared context. when we won't feel the same
+                  rain from the same clouds. when we feel pressure to use our
+                  catch-up time wisely, sharing mostly the highlights and the
+                  Big Things. without these friends, San Francisco will be a
+                  little less warm, a little less friendly.
+                </p>
+                <p>
+                  my friends are only a few of many who are leaving the city.
+                  <button class="popover-button" popovertarget="rent">
+                    rents here have increased 26% in the last year</button
+                  >. so many people, including those whose families have lived
+                  here for generations, are being priced out, especially in
+                  neighborhoods with large Black and
+                  <button class="popover-button" popovertarget="ai-district">
+                    Hispanic populations</button
+                  >. we're failing to build
+                  <button class="popover-button" popovertarget="social-housing">
+                    social housing
+                  </button>
+                  so that the people who make this city so beautiful are able to
+                  stay here. as we fail to keep these people within our
+                  communities, we lose
+                  <span id="round-end"
+                    >their
+                    <button class="popover-button" popovertarget="art">
+                      art</button
+                    >, food, and culture, too.</span
+                  >
+                </p>
+                <span id="rent" class="popover-target" popover="auto"
+                  >this is mostly attributed to the surge in AI companies
+                  bringing highly-paid tech employees back to SF from around the
+                  country
+                  https://nypost.com/2026/10/27/real-estate/san-francisco-rents-soar-26-to-record-heights/</span
+                >
+                <span id="ai-district" class="popover-target" popover="auto"
+                  >i recently heard someone refer to the Mission, a neighborhood
+                  that's home to a large Latino community, as "the AI district"
+                  and it made me sick
+                  https://www.urbandisplacement.org/maps/sf-bay-area-gentrification-and-displacement/</span
+                >
+                <span id="social-housing" class="popover-target" popover="auto"
+                  >in the Nov 2026 election, we failed to pass a proposition
+                  that would have allocated more funding for social housing
+                  https://ballotpedia.org/San_Francisco,_Proposition_I,_Dedicate_Half_of_Revenue_from_the_Real_Estate_Transfer_Tax_to_Housing_Programs_Initiative_(November_2026)</span
+                >
+                <span id="art" class="popover-target" popover="auto"
+                  >just this year, a zine and comics shop i loved closed down in
+                  the Mission because of costs.
+                  https://www.instagram.com/silversprocketshop/?hl=en. these
+                  businesses are being replaced by weird stuff like this 24/7
+                  cafe for founders https://www.corgicafe.com/</span
+                >
+              </div>
+              <div class="section">
+                <div class="title" id="flower-start">
+                  i grieve how tech is shifting the politics of the city starkly
+                  rightward.
+                </div>
+                <p>
+                  out of all cities across the world,
+                  <button class="popover-button" popovertarget="billionaires">
+                    San Francisco has the most billionaires-per-capita</button
+                  >.
+                </p>
+                <p>
+                  this last election,
+                  <button class="popover-button" popovertarget="prop-40">
+                    California failed to pass a one-time wealth tax</button
+                  >. Prop 40 wouldn't have really made a meaningful dent in
+                  wealth inequality, but it would have been something.
+                </p>
+                <p>
+                  the tech CEOs have used their political influence to cozy up
+                  to the mayor. working together, the execs and our city
+                  government have flooded the city with robotaxis, something we
+                  were never given the opportunity to vote on (because of course
+                  we weren't). they've blanketed our streets with
+                  <button class="popover-button" popovertarget="flock">
+                    surveillance cameras
+                  </button>
+                  to support the
+                  <button class="popover-button" popovertarget="cops">
+                    cops</button
+                  >. they're working to build up political infrastructure, using
+                  the city as a testing ground for right-wing, pro-owning-class
+                  strategies they want to roll out nation-wide. their wins are
+                  already leaving
+                  <button
+                    class="popover-button"
+                    popovertarget="child-homelessness"
+                  >
+                    few resources to actually help the people</button
+                  >.
+                </p>
+                <span id="billionaires" class="popover-target" popover="auto"
+                  >https://www.usnews.com/news/cities/articles/2019-05-10/san-francisco-is-home-to-the-worlds-most-billionaires-per-capita</span
+                >
+                <span id="prop-40" class="popover-target" popover="auto"
+                  >over $140 million was spent to oppose it
+                  https://www.kqed.org/news/12108353/sf-has-more-billionaires-than-any-city-in-california-heres-how-residents-voted-on-prop-40</span
+                >
+                <span id="flock" class="popover-target" popover="auto"
+                  >two members of the SF Democratic Party committee work for
+                  Flock. they chose not to recuse themselves from recent votes
+                  to suspend the city's contract with the company or implement
+                  stricter guardrails
+                  https://missionlocal.org/2026/09/san-francisco-democratic-party-flock-cameras/</span
+                >
+                <span id="cops" class="popover-target" popover="auto"
+                  >some of whom are making over $900k a year by abusing overtime
+                  https://www.sfchronicle.com/crime/article/sf-police-sheriff-overtime-budgets-22387336.php</span
+                >
+                <span
+                  id="child-homelessness"
+                  class="popover-target"
+                  popover="auto"
+                  >child homelessness has risen sharply in the last few years
+                  https://www.sfexaminer.com/news/the-city/report-shows-spike-in-child-homelessness-in-san-francisco/article_c69c87f0-f068-4ee6-9d3b-7b93ef0af09d.html</span
+                >
+                <p>
+                  the transplants who work as employees at these AI companies
+                  are joining the city's organizing spaces too, including mine.
+                  and i appreciate that these people are eager to build a better
+                  world. but i am frustrated by how often they are white, how
+                  often they are men, how often they resist doing the
+                  challenging work of looking inward.
+                </p>
+                <p>
+                  i can start to feel hopeless when i think too hard about how
+                  often they refuse to interrogate their complicity and the ways
+                  they benefit from extractive and harmful systems. because the
+                  tech they build at work
+                </p>
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="palestine">
+                    assists Israel's genocide in Palestine</button
+                  >.
+                </p>
+                <span id="palestine" class="popover-target" popover="auto"
+                  >https://www.wired.com/story/amazon-google-project-nimbus-israel-idf/</span
+                >
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="congo">
+                    relies on minerals mined by children in the Congo</button
+                  >.
+                </p>
+                <span id="congo" class="popover-target" popover="auto"
+                  >https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/</span
+                >
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="data-labeling">
+                    and is trained using data labeled grossly underpaid,
+                    traumatized workers across the world</button
+                  >.
+                </p>
+                <span id="data-labeling" class="popover-target" popover="auto"
+                  >https://time.com/6247678/openai-chatgpt-kenya-workers/</span
+                >
+                <p>
+                  i worry that the revolutionary spirit of this city is being
+                  watered down by a lack of solidarity. we have a deep history
+                  that i fear we're forgetting. i hope people work to remember
+                  that this is the same place where
+                </p>
+                <p class="text-[red]!">LOOK FOR ARCHIVAL SOURCES HERE</p>
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="general-strike">
+                    the general strike happened in 1934</button
+                  >.
+                </p>
+                <span id="general-strike" class="popover-target" popover="auto"
+                  >(https://www.foundsf.org/The_General_Strike_of_1934)
+                  (https://www.peoplesworld.org/article/daily-worker-archives-the-san-francisco-general-strike-of-1934/)</span
+                >
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="black-panthers">
+                    the Black Panthers started their breakfast program and
+                    printed Party materials
+                  </button>
+                  .
+                  <span
+                    id="black-panthers"
+                    class="popover-target"
+                    popover="auto"
+                    >https://www.foundsf.org/Black_Panthers</span
+                  >
+                </p>
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="disability">
+                    disability organizers led sit-ins to fight for their rights
+                  </button>
+                  .
+                  <span id="disability" class="popover-target" popover="auto"
+                    >https://www.nps.gov/articles/000/504-protest-disability-community-and-civil-rights.htm</span
+                  >
+                </p>
+                <p class="pl-8">
+                  <button class="popover-button" popovertarget="aids">
+                    parts of the community came together to protect their gay
+                    neighbors during the AIDS crisis
+                  </button>
+                  .
+                  <span id="aids" class="popover-target" popover="auto"
+                    >https://resources.sfaf.org/resource-library/sfaf-history/</span
+                  >
+                </p>
+                <p>
+                  when the privileged enter into communities (and organizing
+                  spaces) looking out for ourselves as individuals instead of as
+                  members of a collective, it can become easy to sacrifice
+                  others. which means we will never be free. because, as
+                  <button
+                    class="popover-button"
+                    popovertarget="fannie-lou-hamer"
+                  >
+                    Fannie Lou Hamer
+                  </button>
+                  said, "Nobody's free until everybody's free."
+                </p>
+                <span
+                  id="fannie-lou-hamer"
+                  class="popover-target"
+                  popover="auto"
+                >
+                  (https://www.theblackarchives.nl/nobodyisfree-moreinfo.html)</span
+                >
+              </div>
+              <div class="section">
+                <div class="title">i grieve the effects of climate change.</div>
+                <p>
+                  the fog has been a consistent buddy on group bike rides to the
+                  ocean for years (photo). on weekend mornings, it's normal for
+                  us to grab a blanket and a book and head through Golden Gate
+                  Park towards the beach. no matter how warm it is near home,
+                  it's always a good idea to bring a jacket. because the fog on
+                  the west side comes with a chill. i'll miss the fog greatly
+                  <button class="popover-button" popovertarget="fog">
+                    when it's gone</button
+                  >.
+                </p>
+                <span id="fog" class="popover-target" popover="auto"
+                  >(https://www.theenvironmentalistmagazine.com/sp24-issue1/karls-vanishing-act)</span
+                >
+                <p>
+                  i'm currently preparing for an extra-rainy rainy season
+                  because of the
+                  <button class="popover-button" popovertarget="el-nino">
+                    super el niño</button
+                  >. we're expecting more flooding,
+                  <button class="popover-button" popovertarget="pge">
+                    power outages</button
+                  >, and traffic stops. i worry about how our unhoused neighbors
+                  will fare.
+                </p>
+                <span id="el-nino" class="popover-target" popover="auto"
+                  >(https://www.kqed.org/news/12109296/el-nino-in-the-bay-area-what-you-need-to-know)</span
+                >
+                <span id="pge" class="popover-target" popover="auto"
+                  >in 2025, the city had a huge power outage that lasted for
+                  days. robotaxis stopped working and blocked traffic.
+                  https://www.kqed.org/news/12073229/san-francisco-supervisors-probe-pge-after-widespread-winter-power-outages</span
+                >
+                <p>
+                  yesterday i learned that a waterspout is basically a tornado
+                  on water because we had
+                  <button class="popover-button" popovertarget="waterspout">
+                    two of them in the Bay</button
+                  >.
+                </p>
+                <span id="waterspout" class="popover-target" popover="auto"
+                  >all of the sources i read say that it's not a normal thing to
+                  happen here
+                  https://www.sfchronicle.com/weather/article/sf-bay-waterspouts-22533887.php</span
+                >
+                <p>
+                  i've heard that the
+                  <button class="popover-button" popovertarget="birds">
+                    birds are going to start going extinct
+                  </button>
+                  because of changing landscapes. earlier this year my best
+                  friend fell in love with two baby owls that live in the nearby
+                  park. she went out to visit them most days. i joined her
+                  sometimes too. (photo). it was lovely to connect with nature
+                  so close to my apartment, and to watch these birds grow up.
+                  i'm gutted to know that these experiences will become more
+                  uncommon.
+                </p>
+                <span id="birds" class="popover-target" popover="auto">
+                  (https://www.sfbbo.org/issues-birds-face/)</span
+                >
+                <p>
+                  i've read that the world's
+                  <button class="popover-button" popovertarget="coffee">
+                    coffee
+                  </button>
+                  production is going to be hit hard by climate change too. i
+                  guess i feel a little silly, being this sad about this one.
+                  but i love my daily practice of brewing a cup. a nice reminder
+                  to slow down for a moment. i love the deep and vulnerable
+                  conversations i have with friends over coffee. and the sweet
+                  chats i have with neighborhood baristas.
+                </p>
+                <span id="coffee" class="popover-target" popover="auto">
+                  (https://www.npr.org/2025/09/30/nx-s1-5553625/coffee-day-farmers-industry-climate-change-labor-stenophylla)</span
+                >
+              </div>
+              <div class="section">
+                <div class="title">
+                  i grieve that future generations won't know the version of
+                  this city that i love so much.
+                </div>
+                <p>
+                  i'm sure that many people have felt this way about me and
+                  people like me. because when i read this whole thing back, i
+                  feel acutely aware of how i contribute to displacement, the
+                  tech takeover, and climate change. i'm a transplant who moved
+                  here in 2018 for a software job (eight years later, now i have
+                  a different software job). and as someone in the United
+                  States,
+                  <button class="popover-button" popovertarget="coffee">
+                    i do more to worsen climate change than the vast vast
+                    majority of people throughout history</button
+                  >.
+                </p>
+                <span
+                  id="us-climate-change"
+                  class="popover-target"
+                  popover="auto"
+                >
+                  (https://climatechangetracker.org/nations/greenhouse-gas-emissions/united-states-of-america/historical-impact)</span
+                >
+                <p>
+                  i know that some of my choices are harmful. and i care to work
+                  with my neighbors to preserve the things we love. and fight
+                  against the things we don't. inside ourselves and outside
+                  ourselves. so that this city and this world can be a better
+                  place. for us and for everyone who comes after.
+                </p>
+                <p>
+                  this morning i feel really sad as i reflect on how the
+                  impermanent the beautiful stuff is. but i remind myself that
+                  the evil stuff's impermanent, too. and when these destructive
+                  forces go away, as everything does, maybe in part because of
+                  our own contributions,
+                  <span id="flower-end"
+                    >there will be space for more beautiful to bloom.</span
+                  >
+                </p>
+              </div>
             </div>
-            everything is impermanent,
-            <button class="popover-button" popovertarget="octavia-butler">
-              God is Change
-            </button>
-            <div id="octavia-butler" class="popover-target" popover="auto">
-              in Octavia Butler's novel,
-              <a
-                href="https://www.octaviabutler.com/parableseries"
-                target="_blank"
-                >Parable of the Sower</a
-              >, "God is Change" is the first tenet of Earthseed
-            </div>
-            , AND sometimes i find the loss overwhelming. i grieve that my
-            friends are moving away. they're embarking on new adventures,
-            excited to build their next chapters in cities far from here. i love
-            and support them, but i will miss our walks through the park, our
-            Sunday morning farmers market chats, our serendipitous run-ins on
-            random evenings. we will keep in touch for sure, but our
-            relationships will change when we don't live in the same place
-            anymore, when we don't have that shared context. when we won’t feel
-            the same rain from the same clouds. without them, San Francisco will
-            be a little less warm, a little less friendly. my friends are only a
-            few of many who are leaving the city. rents here have increased 26%
-            in the last year (this is mostly attributed to the surge in AI
-            companies bringing highly-paid tech employees back to SF from around
-            the country
-            https://nypost.com/2026/10/27/real-estate/san-francisco-rents-soar-26-to-record-heights/).
-            so many people, including those whose families have lived here for
-            generations, are being priced out, especially in neighborhoods with
-            large Black and Hispanic populations (i recently heard someone refer
-            to the Mission, a neighborhood that's home to a large Latino
-            community, as "the AI district" and it made me sick
-            https://www.urbandisplacement.org/maps/sf-bay-area-gentrification-and-displacement/).
-            we're failing to build social housing so that the people who make
-            this city so beautiful are able to stay here (in the Nov 2026
-            election, we failed to pass a proposition that would have allocated
-            more funding for social housing
-            https://ballotpedia.org/San_Francisco,_Proposition_I,_Dedicate_Half_of_Revenue_from_the_Real_Estate_Transfer_Tax_to_Housing_Programs_Initiative_(November_2026)).
-            i grieve how tech is shifting the politics in City Hall starkly
-            rightward. we have the most billionaires-per-capita
-            (https://www.usnews.com/news/cities/articles/2019-05-10/san-francisco-is-home-to-the-worlds-most-billionaires-per-capita)
-            (we just failed to pass a one-time tax with Prop 40
-            https://www.kqed.org/news/12108353/sf-has-more-billionaires-than-any-city-in-california-heres-how-residents-voted-on-prop-40).
-            the tech CEOs have used their political influence to flood the city
-            with robotaxis, something we were never given the opportunity to
-            vote on (because of course we weren’t). and they continue to
-            <div id="round-end">ROUND STOP</div>
-            <div id="flower-start">FLOWER START</div>
-            cozy up to our billionaire mayor , working with him to blanket our
-            streets with surveillance cameras (DCCC PAID BY FLOCK), leaving
-            little resources to actually help the people (child homelessness has
-            risen sharply in the last few years
-            https://www.sfexaminer.com/news/the-city/report-shows-spike-in-child-homelessness-in-san-francisco/article_c69c87f0-f068-4ee6-9d3b-7b93ef0af09d.html).
-            the transplants who work at AI companies are joining the city's
-            organizing spaces too, including mine. and i appreciate how these
-            people are eager to build a better world. but i am frustrated by how
-            often they are white, how often they are men, how often they resist
-            interrogating their complicity and the ways our industry does great
-            harm across the world (the technology that gets developed here is
-            used to enable Israel's genocide in Palestine FIND A RESOURCE). i
-            worry that the revolutionary spirit of this city is being watered
-            down by a lack of solidarity, by a forgetting of our history. i hope
-            people work to remember that this is the same place where the
-            general strike happened in 1934
-            (https://www.foundsf.org/The_General_Strike_of_1934)
-            (https://www.peoplesworld.org/article/daily-worker-archives-the-san-francisco-general-strike-of-1934/).
-            where the Black Panthers started their breakfast program and printed
-            Party materials (https://www.foundsf.org/Black_Panthers). where
-            parts of the community came together to protect their gay neighbors
-            during the AIDS crisis
-            (https://resources.sfaf.org/resource-library/sfaf-history/). i
-            grieve the effects of climate change i can already see. the fog has
-            been a great buddy on my bike rides to the ocean for years, i’ll
-            miss it greatly when it’s fully gone, i already miss it this
-            way-too-sunny November
-            (https://www.theenvironmentalistmagazine.com/sp24-issue1/karls-vanishing-act).
-            WILD FIRES ? BIRDS ? ? COFFEE? i grieve that future generations
-            won't see the version of this city that i love so much. i feel very
-            aware that many people have felt this way about me and people like
-            me. because when i read this back, i see how i contribute to all of
-            the issues i’m speaking about. i’m a transplant who moved here in
-            2018 for a tech job. my presence here makes it harder for the people
-            who have lived here forever. SOMETHING ABOUT OTHER SHIFTS IN SF,
-            ACCOUNTS FROM PEOPLE something about recording my thoughts and
-            observations for now, in case anyone is interested to read i know
-            that loss and impermanence creates space for new beautiful things to
-            bloom. and i do have an abundance of revolutionary optimism.
-            <div id="flower-end">FLOWER STOP</div>
-            AND ALL OF THESE DESTRUCTIVE FORCES ARE IMPERMANENT TOO. but today,
-            as i drink my morning coffee and look out at the Bay, i let myself
-            be sad.
           </div>
           <div id="end">
-            <div class="title">A zine by Janna.</div>
-            <a href="./process.html">Learn more about the process.</a>
+            <div class="title pb-0! text-[18px]!">A zine by Janna.</div>
+            <a href="./process.html" class="text-xs">how it was made</a>
           </div>
         </div>
       </div>
